@@ -1,8 +1,11 @@
-<!--AUTHOR: Lucksi
-Copyright © 2021 Lucksi
-License: GNU General Public License v3.0--> 
 <?php
+    /*ORIGINAL CREATOR: Luca Garofalo (Lucksi)
+    AUTHOR: Luca Garofalo (Lucksi)
+    Copyright (C) 2021-2023 Lucksi <lukege287@gmail.com>
+    License: GNU General Public License v3.0*/ 
+    
     function Moderate(){
+        error_reporting(0);
         $Session_Token = "../Session/Token.txt";
         $Login_file = "../Credentials/Login.json";
         if(file_exists($Login_file)){    
@@ -22,7 +25,7 @@ License: GNU General Public License v3.0-->
             }
         }
         else {
-            die;
+            exit(0);
         }
     }
     Moderate();

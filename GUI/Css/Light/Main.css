@@ -1,5 +1,6 @@
-/*AUTHOR: Lucksi
-Copyright © 2021 Lucksi
+/*ORIGINAL CREATOR: Luca Garofalo (Lucksi)
+AUTHOR: Luca Garofalo (Lucksi)
+Copyright (C) 2021-2023 Lucksi <lukege287@gmail.com>
 License: GNU General Public License v3.0*/
 
 @import url("Style.css");
@@ -141,6 +142,29 @@ License: GNU General Public License v3.0*/
     border-top: 30px solid #000000;
 }
 
+.part {
+    margin-top: 5px;
+    margin-left: -4px;
+    display: inline-block;
+    background-color: #846e6e5e;
+    border: 3px solid black;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.part p{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: #000000;
+    font-size: x-large;
+}
+
+.part img{
+    height: 130px;
+    width: auto;
+    border-radius: 30px;
+}
+
 #Arrow:hover {
     animation: arrow 2s infinite;
 }
@@ -191,5 +215,11 @@ License: GNU General Public License v3.0*/
 
     .languages {
         display: none;
+    }
+
+    .part img{
+        height: 90px;
+        width: auto;
+        border-radius: 30px;
     }
 }

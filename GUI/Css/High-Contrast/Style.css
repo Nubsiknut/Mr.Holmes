@@ -1,8 +1,10 @@
-/*AUTHOR: Lucksi
-Copyright © 2021 Lucksi
+/*ORIGINAL CREATOR: Luca Garofalo (Lucksi)
+AUTHOR: Luca Garofalo (Lucksi)
+Copyright (C) 2021-2023 Lucksi <lukege287@gmail.com>
 License: GNU General Public License v3.0*/
 
 @import url("Main.css");
+@import url("Username.css");
 
 body {
     background-color: #000000 !important;
@@ -48,20 +50,28 @@ p {
     display: block;
 }
 
-.Content {
+.Themes{
+    display: inline-block;
+}
+
+.Content, .Content2 {
     display: none;
     position: absolute;
     margin-top: -20px;
     right: 0px;
     text-align: center;
-    background-color:#1a2b34;
+    background-color: #cdd5e618;
     border: 2px solid;
     border-radius: 10px;
     border-color: #ffffff;
     animation: opac 1s 1;
 }
 
-.Content a {
+.Content2{
+    margin-right:120px ;
+}
+
+.Content a, .Content2 a {
     color: #ffffff;
     margin-left: 10px;
     text-decoration: none;
@@ -72,7 +82,7 @@ p {
 
 }
 
-.languages button {
+.languages button, .Themes button {
     display: block;
     margin-top: -45px;
     float: right;
@@ -83,6 +93,11 @@ p {
     color: #ffffff;
     border-radius: 10px;
     font-size: medium;
+}
+
+.Themes button{
+    margin-top: -58px;
+    margin-left: 1100px;
 }
 
 .Upper-card {
@@ -147,20 +162,24 @@ p {
 
 .Datap {
     display:table;
-    margin-left: 150px;
+    margin-left: 100px;
+    min-width: 500px;
+    max-width: fit-content;
     margin-right: auto;
     border: 3px solid;
     border-color: #ffffff;
+    background-color: #cdd5e618;
     border-radius: 10px;
 }
 
 .Dataf {
     display:table;
     margin-left: 700px;
-    margin-top: -630px;
+    margin-top: -525px;
     margin-right: auto;
     border: 3px solid;
     border-color: #ffffff;
+    background-color: #cdd5e618;
     border-radius: 10px;
 }
 
@@ -178,6 +197,36 @@ p {
     color: #ffffff;
 }
 
+.map {
+    display: block;
+    justify-content: left;
+    border:2px solid;
+    border-color: #ffffff;
+    border-radius: 10px;
+    height: 605px;
+    width: 500px;
+}
+
+.Geo {
+    display: inline-block;
+    position: absolute;
+    margin-top: -30px;
+    margin-right: auto;
+    margin-bottom: 500px;
+    margin-left: 100px;
+}
+
+#Alert{
+    font-family: Impact,Haettenschweiler,Franklin Gothic Bold,Charcoal,Helvetica Inserat,Bitstream Vera Sans Bold,Arial Black,sans serif;
+    font-size: x-large;
+    color: #ff0000;
+}
+
+.NoScript p{
+    font-family: Impact,Haettenschweiler,Franklin Gothic Bold,Charcoal,Helvetica Inserat,Bitstream Vera Sans Bold,Arial Black,sans serif;
+    font-size: x-large;
+    color: #ffffff;
+}
 
 @keyframes joggle {
     0%{color:#ffffff;}
@@ -256,5 +305,22 @@ p {
     #Searcher {
         width: 225px;
         height: 30px; 
+    }
+
+    .Geo {
+        margin-top: 1450px;
+        display: block;
+        height: 200px;
+        min-width: 100px;
+        max-width: 220px;
+    }
+
+    .map {
+        display: block;
+        margin-right: auto;
+        margin-left: -60px;
+        height: 400px;
+        min-width: 150px;
+        max-width: 305px;
     }
 }

@@ -1,14 +1,16 @@
 #!/bin/bash
-# AUTHOR: Lucksi
-# Copyright © 2021 Lucksi
+# ORIGINAL CREATOR: Luca Garofalo (Lucksi)
+# AUTHOR: Luca Garofalo (Lucksi)
+# Copyright (C) 2021-2023 Lucksi <lukege287@gmail.com>
 # License: GNU General Public License v3.0
+
 GREEN=$(tput setaf 2)
 LIGHTBLUE=$(tput setaf 6)
 WHITE=$(tput setaf 15)
 
 function check {
   attempts=5;
-  Password=$(sed -nr "/^\[Settings\]/ { :l /^Password[ ]*=/ { s/.*=[ ]*//; p; q;}; n; b l;}" <Configuration/Configuration.ini)
+  Password=$(sed -nr "/^\[Settings\]/ { :l /^password[ ]*=/ { s/.*=[ ]*//; p; q;}; n; b l;}" <Configuration/Configuration.ini)
   printf "${LIGHTBLUE}\nINSERT YOUR UPDATE PASSWORD YOU HAVE $attempts ATTEMPTS\n\n"
   while [[ $attempts>0 ]];
     do
@@ -32,7 +34,7 @@ function check {
 }
 
 function update {
-  Update_path=$(sed -nr "/^\[Settings\]/ { :l /^Path[ ]*=/ { s/.*=[ ]*//; p; q;}; n; b l;}" <Configuration/Configuration.ini)
+  Update_path=$(sed -nr "/^\[Settings\]/ { :l /^path[ ]*=/ { s/.*=[ ]*//; p; q;}; n; b l;}" <Configuration/Configuration.ini)
   cd $Update_path
   mv Mr.Holmes Mr.Holmes2  &>/dev/null
   git clone https://github.com/Lucksi/Mr.Holmes &>/dev/null | printf "$WHITE\nUPDATING MR.HOLMES..\n"

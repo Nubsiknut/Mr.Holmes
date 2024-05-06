@@ -2,12 +2,26 @@
     {
         "Xhamster":{
             "Error": "Status-Code",
+            "text": "User not found",
             "name": "XHamester",
             "main": "https://xhamster.com",
             "user": "https://xhamster.com/users/{}",
             "user2": "https://xhamster.com/users/{}",
             "exception": [" "],
-            "Scrapable": "False"
+            "Scrapable": "False",
+            "Tag": ["Porn"]
+        },
+
+        "Sharesome":{
+            "Error": "Response-Url",
+            "response": "https://sharesome.com/404/",
+            "name": "Sharesome",
+            "main": "sharesome.com",
+            "user": "https://sharesome.com/{}",
+            "user2": "https://sharesome.com/{}",
+            "exception": [" "],
+            "Scrapable": "False",
+            "Tag": ["Porn"]
         },
 
         "PornHub":{
@@ -17,7 +31,8 @@
             "user": "https://pornhub.com/users/{}",
             "user2": "https://pornhub.com/users/{}",
             "exception": [" "],
-            "Scrapable": "False"
+            "Scrapable": "False",
+            "Tag": ["Porn"]
         },
 
         "YouPorn":{
@@ -27,7 +42,8 @@
             "user": "https://youporn.com/uservids/{}",
             "user2": "https://youporn.com/uservids/{}",
             "exception": [" "],
-            "Scrapable": "False"
+            "Scrapable": "False",
+            "Tag": ["Porn"]
         },
 
         "XVideos":{
@@ -37,7 +53,8 @@
             "user": "https://xvideos.com/profiles/{}",
             "user2": "https://xvideos.com/profiles/{}",
             "exception": [" "],
-            "Scrapable": "False"
+            "Scrapable": "False",
+            "Tag": ["Porn-Video"]
         },
 
         "ChaturBate":{
@@ -47,7 +64,8 @@
             "user": "https://chaturbate.com/{}",
             "user2": "https://chaturbate.com/{}",
             "exception": [" "],
-            "Scrapable": "False"
+            "Scrapable": "False",
+            "Tag": ["Porn-Chat"]
         },
 
         "BongaCams":{
@@ -57,7 +75,8 @@
             "user": "https://pt.bongacams.com/profile/{}",
             "user2": "https://pt.bongacams.com/profile/{}",
             "exception": [" "],
-            "Scrapable": "False"       
+            "Scrapable": "False",
+            "Tag": ["Chatcam"]
         },
 
         "Tinder":{
@@ -68,7 +87,8 @@
             "user": "https://tinder.com/@{}",
             "user2": "https://tinder.com/@{}",
             "exception": [" "],
-            "Scrapable": "False"
+            "Scrapable": "False",
+            "Tag": ["Appointment", "Chat", "Social"]
         },
 
         "LiveJasmin":{
@@ -79,18 +99,20 @@
             "user": "https://www.livejasmin.com/en/girls/{}",
             "user2": "https://www.livejasmin.com/en/girls/{}",
             "exception": [" "],
-            "Scrapable": "False"
+            "Scrapable": "False",
+            "Tag": ["Live-Porn"]
         },
 
         "LiveJasmin2":{
             "Error": "Response-Url",
-            "response": "https://www.livejasmin.com/en/girls/",
+            "response": "https://www.livejasmin.com/en/boys/",
             "name": "LiveJasmin(BOYS)",
             "main": "livejasmin.com",
             "user": "https://www.livejasmin.com/en/boys/{}",
             "user2": "https://www.livejasmin.com/en/boys/{}",
             "exception": [" "],
-            "Scrapable": "False"
+            "Scrapable": "False",
+            "Tag": ["Live-Porn"]
         }
     }
 ]
